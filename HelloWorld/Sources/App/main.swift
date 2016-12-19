@@ -12,9 +12,9 @@ drop.get("/") { req in
         return "Hello World!"
 }
 
-drop.get("/view") { req in
-    return try drop.view("Hello World!")
-}
+//drop.get("/view") { req in
+//    return try drop.view("Hello World!")
+//}
 
 drop.get("/name",":name") { request in
     if let name = request.parameters["name"]?.string {
